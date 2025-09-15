@@ -1,18 +1,16 @@
-package com.yupi.yupicturebackend.model.entity;
+package com.yupi.yupicturebackend.model.vo;
 
 import com.baomidou.mybatisplus.annotation.*;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
- * 用户
- * @TableName user
+ * 已登录用户脱敏后的数据
  */
-@TableName(value ="user")
 @Data
-public class User implements Serializable {
+public class LoginUserVO implements Serializable {
     /**
      * id
      */
@@ -22,12 +20,8 @@ public class User implements Serializable {
     /**
      * 账号
      */
+    @TableField("userAccount")
     private String userAccount;
-
-    /**
-     * 密码
-     */
-    private String userPassword;
 
     /**
      * 用户昵称
@@ -64,10 +58,7 @@ public class User implements Serializable {
      */
     private Date updateTime;
 
-    /**
-     * 是否删除
-     */
-    private Integer isDelete;
 
     private static final long seralizeVersionUID = 1L;
+
 }

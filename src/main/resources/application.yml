@@ -8,9 +8,17 @@ spring:
   # 数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.244.15.111:3306/yu-picture
+    url: jdbc:mysql://10.244.15.111:3306/yu_picture
     username: remoteuser
     password: admin
+  profiles:
+    active: local
+#    设置文件限制
+  servlet:
+      multipart:
+        max-file-size: 10MB       # 单个文件允许的最大大小
+        max-request-size: 10MB    # 一次请求允许的最大总大小
+
 
 mybatis-plus:
   configuration:
