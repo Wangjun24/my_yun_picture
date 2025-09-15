@@ -2,6 +2,10 @@ server:
   port: 8123
   servlet:
     context-path: /api
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
 spring:
   application:
     name: yu-picture-backend
@@ -18,6 +22,12 @@ spring:
       multipart:
         max-file-size: 10MB       # 单个文件允许的最大大小
         max-request-size: 10MB    # 一次请求允许的最大总大小
+
+  # session 配置
+  session:
+    store-type: redis
+    # session 30 天过期
+    timeout: 2592000
 
   # Redis 配置
   redis:
