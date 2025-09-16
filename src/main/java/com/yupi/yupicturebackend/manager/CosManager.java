@@ -1,4 +1,4 @@
-package com.yupi.yupicturebackend.manner;
+package com.yupi.yupicturebackend.manager;
 
 import cn.hutool.core.io.FileUtil;
 import com.qcloud.cos.COSClient;
@@ -8,7 +8,7 @@ import com.qcloud.cos.model.GetObjectRequest;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.model.PutObjectResult;
 import com.qcloud.cos.model.ciModel.persistence.PicOperations;
-import com.yupi.yupicturebackend.corefig.CosClientConfig;
+import com.yupi.yupicturebackend.config.CosClientConfig;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;

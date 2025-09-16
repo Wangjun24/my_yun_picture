@@ -1,4 +1,4 @@
-package com.yupi.yupicturebackend.corefig;
+package com.yupi.yupicturebackend.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

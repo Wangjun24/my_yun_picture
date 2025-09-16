@@ -1,4 +1,4 @@
-package com.yupi.yupicturebackend.manner.upload;
+package com.yupi.yupicturebackend.manager.upload;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateUtil;
@@ -9,10 +9,10 @@ import com.qcloud.cos.model.PutObjectResult;
 import com.qcloud.cos.model.ciModel.persistence.CIObject;
 import com.qcloud.cos.model.ciModel.persistence.ImageInfo;
 import com.qcloud.cos.model.ciModel.persistence.ProcessResults;
-import com.yupi.yupicturebackend.corefig.CosClientConfig;
+import com.yupi.yupicturebackend.config.CosClientConfig;
 import com.yupi.yupicturebackend.exception.BusinessException;
 import com.yupi.yupicturebackend.exception.ErrorCode;
-import com.yupi.yupicturebackend.manner.CosManager;
+import com.yupi.yupicturebackend.manager.CosManager;
 import com.yupi.yupicturebackend.model.dot.file.UploadPictureResult;
 import lombok.extern.slf4j.Slf4j;
 
