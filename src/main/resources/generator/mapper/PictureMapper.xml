@@ -13,6 +13,7 @@
             <result property="category" column="category" />
             <result property="tags" column="tags" />
             <result property="picSize" column="picSize" />
+            <result property="picColor" column="picColor" />
             <result property="picWidth" column="picWidth" />
             <result property="picHeight" column="picHeight" />
             <result property="picScale" column="picScale" />
@@ -31,7 +32,7 @@
 
     <sql id="Base_Column_List">
         id,url,thumbnailUrl,name,introduction,category,tags,
-        picSize,picWidth,picHeight,picScale,picFormat,
+        picSize,picColor,picWidth,picHeight,picScale,picFormat,
         userId,spaceId,createTime,editTime,updateTime,isDelete,
         reviewStatus,reviewMessage,reviewerId,reviewTime
 

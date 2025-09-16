@@ -78,8 +78,18 @@ public class PictureQueryRequest extends PageRequest implements Serializable {
     /**  
      * 搜索词（同时搜名称、简介等）  
      */  
-    private String searchText;  
-  
+    private String searchText;
+    /**
+     * 开始编辑时间
+     */
+    private Date startEditTime;
+
+    /**
+     * 结束编辑时间
+     */
+    private Date endEditTime;
+
+
     /**  
      * 用户 id  
      */  

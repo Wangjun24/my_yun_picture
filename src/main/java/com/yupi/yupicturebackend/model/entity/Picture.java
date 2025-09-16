@@ -118,10 +118,17 @@ public class Picture {
      * 审核时间
      */
     private Date reviewTime;
+    /**
+     * 图片主色调
+     */
+    private String picColor;
+
 
     /**
      * 空间 id
      */
+
+
     private Long spaceId;
 
 }
